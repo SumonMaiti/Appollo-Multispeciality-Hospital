@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f40f22;
+    /* color: #d57b7b; */
+}
+
+/* HERO */
+.hero {
+    background: url("images/hospital-banner.jpg") center/cover no-repeat;
+    height: 75vh;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 51, 102, 0.65);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 20px;
+}
+
+/* SECTION HEADINGS */
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #003366;
+}
+
+/* OPD SCROLL */
+.opd-section {
+    padding: 50px 20px;
+    background: white;
+}
+
+.scroll-wrapper {
+    overflow: hidden;
+}
+
+.doctor-scroll {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+}
+
+.doctor-card {
+    background: #f0f6ff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* ABOUT */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* EQUIPMENT */
+.equipment {
+    padding: 50px 20px;
+    background: #e9f2fb;
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.equip-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* SERVICES */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services ul {
+    list-style: none;
+    columns: 2;
+    font-size: 18px;
+}
+
+/* GALLERY */
+.gallery {
+    padding: 50px 20px;
+    background: #f9fbfd;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
