@@ -7,6 +7,13 @@
     <title>Apollo Multispeciality Hospital</title>
     <link rel="stylesheet" href="Style.css">
 </head>
+<div id="doctorModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle">Doctors</h2>
+        <div id="doctorList"></div>
+    </div>
+</div>
 
 <body>
 
@@ -72,12 +79,35 @@
 
     <!-- ABOUT SECTION -->
     <section class="about">
-        <h2>Why Choose Apollo Hospital?</h2>
+        <h2>Why Choose Appollo Hospital?</h2>
         <p>
             We provide world-class healthcare with experienced doctors, modern operation theatres,
             24×7 emergency services, and patient-centered treatment.
         </p>
     </section>
+    <!-- Map integration -->
+    <section class="location">
+        <h2>Find Us Here</h2>
+        <p>Visit Appollo Multispeciality Hospital for world-class healthcare services.</p>
+
+        <div class="map-container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps?q=22.873735,88.0116941&z=18&output=embed" width="100%"
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Tarakeswar+Appollo+Multispeciality+Hospital"
+            target="_blank" class="direction-btn">Get Directions</a>
+
+        <div class="address">
+            <p><strong>Address:</strong> Tarakeswar, West Bengal, India</p>
+            <p><strong>Emergency:</strong> +91 XXXXX XXXXX</p>
+        </div>
+    </section>
+
+
 
     <!-- ADVANCED EQUIPMENT -->
     <section class="equipment">
@@ -94,16 +124,71 @@
 
     <!-- SERVICES -->
     <section class="services">
-        <h2>Our Medical Services</h2>
-        <ul>
-            <li>Cardiology</li>
-            <li>Orthopaedics</li>
-            <li>Neurology</li>
-            <li>Gynaecology</li>
-            <li>Pediatrics</li>
-            <li>Emergency & Trauma Care</li>
-        </ul>
+        <div class="container">
+            <h2 class="section-title">Our Medical Services</h2>
+            <p class="section-subtitle">Comprehensive healthcare services delivered by experienced specialists using
+                advanced medical technology.</p>
+
+            <div class="services-grid">
+
+                <div class="service-card" onclick="openDoctors('cardiology')">
+                    <div class="service-icon">
+                        <img src="cardiology.jpg" alt="Cardiology">
+                    </div>
+                    <h3>Cardiology</h3>
+                    <p>Advanced diagnosis and treatment for heart and vascular conditions.</p>
+                    <span class="service-link">View Doctors →</span>
+                </div>
+
+                <div class="service-card" onclick="openDoctors('orthopaedics')">
+                    <div class="service-icon">
+                        <img src="orthopedic.jpg" alt="Orthopaedics">
+                    </div>
+                    <h3>Orthopaedics</h3>
+                    <p>Expert care for bones, joints, spine, and sports injuries.</p>
+                    <span class="service-link">View Doctors →</span>
+                </div>
+
+                <div class="service-card" onclick="openDoctors('neurology')">
+                    <div class="service-icon">
+                        <img src="neurology.jpeg" alt="Neurology">
+                    </div>
+                    <h3>Neurology</h3>
+                    <p>Specialized treatment for brain, nerve, and spinal disorders.</p>
+                    <span class="service-link">View Doctors →</span>
+                </div>
+
+                <div class="service-card" onclick="openDoctors('gynaecology')">
+                    <div class="service-icon">
+                        <img src="gynecologist.png" alt="Gynaecology">
+                    </div>
+                    <h3>Gynaecology</h3>
+                    <p>Complete women’s healthcare, maternity, and reproductive services.</p>
+                    <span class="service-link">View Doctors →</span>
+                </div>
+
+                <div class="service-card" onclick="openDoctors('pediatrics')">
+                    <div class="service-icon">
+                        <img src="pediatric2.jpg" alt="Pediatrics">
+                    </div>
+                    <h3>Pediatrics</h3>
+                    <p>Comprehensive medical care for infants, children, and adolescents.</p>
+                    <span class="service-link">View Doctors →</span>
+                </div>
+
+                <div class="service-card emergency" onclick="openDoctors('emergency')">
+                    <div class="service-icon">
+                        <img src="emergency.jpg" alt="Emergency">
+                    </div>
+                    <h3>Emergency & Trauma</h3>
+                    <p>24×7 emergency services with ICU, trauma care, and ambulance support.</p>
+                    <span class="service-link">View Doctors →</span>
+                </div>
+
+            </div>
+        </div>
     </section>
+
 
     <!-- GALLERY -->
     <section class="gallery">
