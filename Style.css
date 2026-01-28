@@ -12,7 +12,7 @@ body {
 
 /* HERO */
 .hero {
-    background: url("hospital2.jpg") center/cover no-repeat;
+    background: url("Images/hospital2.jpg") center/cover no-repeat;
     height: 700px;
     /* width: 700px; */
     position: relative;
@@ -363,4 +363,11 @@ footer {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+#patent {
+    color: white;
+    text-decoration: none;
+    /* text-wrap: inherit; */
+    font-weight: 100px;
 }
