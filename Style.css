@@ -308,11 +308,11 @@ section h2 {
 }
 
 /* FOOTER */
-footer {
+footer>p {
     background: #003366;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
 }
 
 .modal {
@@ -367,7 +367,7 @@ footer {
 
 #patent {
     color: white;
-    text-decoration: none;
-    /* text-wrap: inherit; */
-    font-weight: 100px;
+    text-decoration: ;
+    font-style: oblique;
+
 }
