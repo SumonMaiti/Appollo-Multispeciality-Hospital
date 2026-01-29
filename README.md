@@ -1,2 +1,2 @@
-# Appollo Municipality Hospital
+# Appollo Multispeciality Hospital
 A productive website for hospital
